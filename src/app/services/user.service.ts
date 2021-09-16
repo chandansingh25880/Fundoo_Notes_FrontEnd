@@ -28,3 +28,6 @@ resetpassword(token : any, data : any){
   return this.httpService.Post("/user/reset-password", data, null, false);
 }
 }
+
+
+
