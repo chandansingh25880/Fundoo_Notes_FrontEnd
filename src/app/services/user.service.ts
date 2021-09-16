@@ -31,4 +31,3 @@ resetpassword(token : any, data : any){
 
 
 
-

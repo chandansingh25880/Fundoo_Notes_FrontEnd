@@ -60,7 +60,7 @@ export class ResetPasswordComponent implements OnInit
             this.openSnackBar('Password Reset Failed:', 2000);
           }
         });
-    }
+    }     
   }
   reqData(reqData: any) {
     throw new Error('Method not implemented.');  

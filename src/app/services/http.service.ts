@@ -23,4 +23,3 @@ export class HttpService {
     return this.http.post(this.BaseUrl + url, data,options);
   }
 }                                                                    
-
