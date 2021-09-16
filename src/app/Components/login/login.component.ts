@@ -37,7 +37,7 @@ export class LoginComponent implements OnInit {
       console.log("invalid data");
       return; 
     }
-      else {
+      else {   
         // console.log("login successful")
         let reqData = {
           email: this.loginForm.value.email,
