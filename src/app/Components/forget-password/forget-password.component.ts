@@ -24,8 +24,6 @@ import { UserService } from 'src/app/services/user.service';
     })
   }
 
-
-
   get f() { return this.ForgetPasswordForm.controls; }
 
   openSnackBar(message: string, duration: number) {
