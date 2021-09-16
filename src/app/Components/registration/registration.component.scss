@@ -1,0 +1,88 @@
+.container{
+    display: flex;
+    border:1px solid gray ;
+    margin: 6% auto;
+    padding: 4% 2%;
+    border-radius: 8px;
+    height: 80vh;
+    width: 50vw;
+    justify-content: space-around;
+  }
+  .fundoo{
+    display: flex;
+    flex-direction: row;
+    }
+    
+  .first-lastName{
+      display: flex;
+      gap:15px;
+      flex-direction:row;
+  }
+  
+  .heading{
+    font-size: 20px;
+  }
+  
+  .password-container{
+   padding-top: 2%;
+  }
+  .button-section{
+      display: flex;
+      justify-content:space-between;
+      margin-bottom:50
+
+  }
+  
+  .button1{
+    color: #1a73e8;
+    
+  }
+  .button2{
+    background-color: #1a73e8;
+    color: white;
+  }
+  
+  .logo{
+    
+    height: 50%;
+  }
+  .img-caption{
+    font-weight: lighter;
+    font-size: 18px;
+  }
+  
+  a{
+    text-decoration: none;
+    color: #1a73e8; 
+  }
+  .password-confirm{
+    display: flex;
+    gap:15px;
+    flex-direction:row;
+
+  }
+  
+  
+  @media (max-width : 1100px)
+  {
+    .container{
+      width: 100%;
+    //   display: none;
+      flex-direction: row;
+    //   justify-content: space-around;
+    font-size: 25px;
+  }
+  
+    .container-form{
+    //   display: flex;
+      flex-direction: row;
+      width: 100%;
+
+    }
+    .img-caption{
+        text-align: center;
+        font-size: 20px;
+      }
+   
+  }
+  

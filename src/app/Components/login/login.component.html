@@ -1,0 +1,57 @@
+<div class="Header" fxFlex=60 fxLayout="row">
+    <div class="Section-1">
+        <div class="fundoo">
+            <div class="Project" *ngFor="let fontcolor of fontcolors,let i=index">
+                <h1 class="projectName" [style]=fontcolor>{{fonttexts[i]}}</h1>
+            </div>
+        </div>
+        <span class="line1" style="font-size: 25px; padding-left: 150px; ">Sign in</span>
+        <h1 class="line2" style="font-size: 16px; padding-left: 105px; opacity: 80%; margin-top: 3%">Use Your Fundoo Account</h1>
+    </div>
+    <form (ngSubmit)="onLogin()" name="loginForm" [formGroup]="loginForm">
+        <!-- email or phone -->
+       <div class="emailphone">
+
+
+           <mat-form-field class="username" appearance="outline" [style.width.px]=380>
+                
+             <mat-label>Email or Phone</mat-label>
+             <input formControlName="email" matInput placeholder="Enter email address" required />
+                        <mat-error *ngIf="!loginForm.controls['email'].valid">
+                            Email is required
+                        </mat-error>
+            </mat-form-field>
+       </div>
+       <div class="pass">
+        <mat-form-field class="password" appearance="outline" [style.width.px]=380>
+        <mat-label>password</mat-label>
+        <input formControlName="password" matInput placeholder="password" required />
+                   <mat-error *ngIf="!loginForm.controls['password'].valid">
+                       password is required
+                   </mat-error>
+       </mat-form-field>
+             
+       </div>
+        
+       <!-- forget-email -->
+        <div class="Forgot-email">
+           <button  mat-button class="button1" routerLink="/forget-password"><a href="http://localhost:4200/forget-password">
+            forget-password</a> </button>
+       </div>
+   
+       <span style="padding-left:1%">Not your computer? Use Guest mode to sign in privately.</span>
+   
+       <div class="Learn-more">
+           <button mat-button class="button1" routerLink="/learn-more">Learn More</button>
+       </div> 
+
+        <!-- Next-button -->
+       <div class="Next-Button" >
+           <button mat-stroked-button style="background-color:white; color: blue; border: 1px solid blue " >  <a href="http://localhost:4200/registration">
+            Create-account</a> </button> 
+           <button mat-raised-button style="background-color:blue; color: white" type="submit" (click)="onLogin()">Next</button>
+         </div> 
+    </form>
+      </div>
+   
+    
