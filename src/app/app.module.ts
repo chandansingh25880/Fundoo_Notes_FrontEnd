@@ -18,6 +18,9 @@ import { ForgetPasswordComponent } from './Components/forget-password/forget-pas
 import { ResetPasswordComponent } from './Components/reset-password/reset-password.component';
 import { DashboardComponent } from './Components/dashboard/dashboard.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatDividerModule } from '@angular/material/divider';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -26,9 +29,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     LoginComponent,
     ForgetPasswordComponent,
     ResetPasswordComponent,
-    DashboardComponent,
-  
-         
+    DashboardComponent,     
   ],
   
   imports: [
@@ -45,7 +46,10 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     HttpClientModule,
     BrowserAnimationsModule,
     MatCardModule,
-    MatToolbarModule 
+    MatToolbarModule,
+    MatSidenavModule,
+    MatDividerModule,
+    MatMenuModule
    
   ],
   providers: [],

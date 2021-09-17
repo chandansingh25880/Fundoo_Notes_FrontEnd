@@ -1,7 +1,7 @@
 <div class="body">
     <mat-toolbar>
         <div class="toolbar" style="display: flex">
-            <button mat-icon-button >
+            <button mat-icon-button (click)="toggleSidebar()">
                 <mat-icon>menu</mat-icon>
             </button>
             <div class="logo">
@@ -33,39 +33,70 @@
             <button mat-icon-button style="margin-left: 20px">
                 <mat-icon>apps</mat-icon>
             </button>
-            <img class="profilepic" 
-            src="	https://lh3.googleusercontent.com/ogw/ADea4I7UaL5WjBcOwyXwBjojVUkNRDl9N1ChjcPrgmxZjQ=s32-c-mo"
-            style="width: 40px; height: 40px; border-radius: 50%; margin-left: 5px" 
-            alt="pic" />
-        </div>
+            
+            <div fxLayout="row" fxLayoutAlign="space-around" ngClass="log-out-icon">
+                <button mat-mini-fab color="" matTooltip="Log Out" mat-icon-button [matMenuTriggerFor]="profile">
+                  <mat-icon>account_circle</mat-icon>
+                </button>
+          
+                <mat-menu #profile="matMenu">
+          
+                  <mat-card-header>
+                    <img mat-card-avatar src="https://lh3.googleusercontent.com/ogw/ADea4I7UaL5WjBcOwyXwBjojVUkNRDl9N1ChjcPrgmxZjQ=s32-c-mo" class="img2" style="margin-left: 35px;">
+                    <!-- <mat-card-title><strong>{{userName}}</strong></mat-card-title>
+                              <mat-card-subtitle>{{userEmail}}</mat-card-subtitle> -->
+                  </mat-card-header>
+          
+                  <button class="next-button" mat-button (click)=logout() style="margin-left: 18px;">
+                    <span>Logout</span>
+                  </button>
+                </mat-menu>
+              </div>
+       </div>
     </mat-toolbar>
-
     
-    
-     <div class="sideIcon" style="margin-bottom: 10px; padding-left: 20px;">
-                <button>
-                  <mat-icon>notifications_none</mat-icon>
+
+
+    <mat-divider style="margin-bottom: 10px"></mat-divider>
+
+    <mat-sidenav-container>
+        <mat-sidenav mode="side" [opened]="opened">
+            <div class="link">
+                <button mat-icon-button>
+                    <mat-icon>lightbulb_outline</mat-icon>
                 </button>
+                <p>Notes</p>
             </div>
-
-            <div class="sideIcon" style="margin-bottom: 10px; padding-left: 20px;">
-                <button>
-                    <mat-icon>create</mat-icon>
+            <div>
+                <button mat-icon-button>
+                    <mat-icon>notifications_none</mat-icon>
                 </button>
-
+                <p>Reminders</p>
             </div>
-
-            <div class="sideIcon" style="margin-bottom: 10px; padding-left: 20px;">
-                <button>
-                    <mat-icon>archive</mat-icon>
+            <div>
+                <button mat-icon-button>
+                    <mat-icon class="material-icons-outlined">edit</mat-icon>
                 </button>
+                <p>Edit labels</p>
             </div>
-
-            <div class="sideIcon" style="margin-bottom: 10px;padding-left: 20px;   background: transparent;">
-                <button>
+            <div>
+                <button mat-icon-button>
+                    <mat-icon class="material-icons-outlined">archive_outline</mat-icon>
+                </button>
+                <p>Archive</p>
+            </div>
+            <div>
+                <button mat-icon-button>
                     <mat-icon>delete_outline</mat-icon>
                 </button>
+                <p>Trash</p>
             </div>
+            
+        </mat-sidenav>
+    
+        <mat-sidenav-content>
+            <router-outlet></router-outlet>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
 
-    </div>
-<!-- </div> -->
+</div>

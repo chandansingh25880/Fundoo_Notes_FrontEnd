@@ -5,6 +5,12 @@
     overflow-y: hidden;
     
 }
+.fundoo{
+    display: flex;
+    flex-direction: row;
+  justify-content:center;
+    }
+    
 input:focus,
 textarea:focus,
 select:focus {
@@ -45,18 +51,12 @@ mat-toolbar {
         font-family: "Montserrat", sans-serif;
         font-weight: 600;
     }
-    .sideIcon:hover { background-color: white; }
     
     .x{
         font-size: xx-large;
         padding-left: 10px;
         padding-right: 10px;
     }
-    .fundoo{
-        display: flex;
-        flex-direction: row;
-      justify-content:center;
-        }
     
     .searchbar {
         background-color: #f1f3f4;
@@ -76,4 +76,46 @@ mat-toolbar {
         opacity: 70%;
         cursor: pointer;
     }
+}
+mat-sidenav-container {
+    height: 100%;
+    
+    mat-sidenav {
+        font-family: "Open Sans", sans-serif;
+        font-size: small;
+        font-weight: 600;
+        border-style: none;
+        width: 280px;
+        height: 100%;
+      
+        button {
+            margin-right: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: transparent;
+            border-color: transparent;
+        }
+        
+        div {
+            padding-left: 15px;
+            display: flex;
+            align-items: center;
+            border-radius: 0px 30px 30px 0px;
+        }
+        
+        div:hover {
+            background-color: rgb(226, 226, 226);
+            cursor: pointer;
+        }
+        
+        .logout:hover {
+            background-color: #fa9806;
+        }
+    }
+}
+
+mat-sidenav-content {
+    height: 85%;
+    overflow-x: hidden;
+    background-color: white;
 }
