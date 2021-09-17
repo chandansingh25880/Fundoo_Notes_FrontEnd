@@ -63,7 +63,7 @@ export class ResetPasswordComponent implements OnInit
     }     
   }
   reqData(reqData: any) {
-    throw new Error('Method not implemented.');  
+    throw new Error('Method not define');  
   
   } 
  }

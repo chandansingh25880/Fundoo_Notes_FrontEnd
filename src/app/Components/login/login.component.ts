@@ -47,16 +47,15 @@ export class LoginComponent implements OnInit {
           (
             (response: any) => {
               localStorage.setItem('Token', response['id']);
+              localStorage.setItem( 'email',response['email']);
+              localStorage.setItem( 'password',response['password']);
               console.log(response);
-              this.route.navigate(['home']);
+    
             },error =>{
               console.log(error.error.error);
             }
-           
+         
           );
       }
     }
   }
-
-
-  
