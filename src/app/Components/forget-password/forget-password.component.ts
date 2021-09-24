@@ -55,5 +55,4 @@ import { UserService } from 'src/app/services/user.service';
         });
     }
   }
-  
 }

@@ -13,7 +13,7 @@
                 </div>
             </div>
         </div>
-  
+
         <div class="searchbar">
             <button mat-icon-button>
                 <mat-icon>search</mat-icon>
@@ -43,8 +43,7 @@
           
                   <mat-card-header>
                     <img mat-card-avatar src="https://lh3.googleusercontent.com/ogw/ADea4I7UaL5WjBcOwyXwBjojVUkNRDl9N1ChjcPrgmxZjQ=s32-c-mo" class="img2" style="margin-left: 35px;">
-                    <!-- <mat-card-title><strong>{{userName}}</strong></mat-card-title>
-                              <mat-card-subtitle>{{userEmail}}</mat-card-subtitle> -->
+                          
                   </mat-card-header>
           
                   <button class="next-button" mat-button (click)=logout() style="margin-left: 18px;">
@@ -54,15 +53,13 @@
               </div>
        </div>
     </mat-toolbar>
-    
-
-
+                                                                 
     <mat-divider style="margin-bottom: 10px"></mat-divider>
 
     <mat-sidenav-container>
         <mat-sidenav mode="side" [opened]="opened">
             <div class="link">
-                <button mat-icon-button>
+                <button mat-icon-button routerLink="/dashboard/notes">
                     <mat-icon>lightbulb_outline</mat-icon>
                 </button>
                 <p>Notes</p>
@@ -73,7 +70,7 @@
                 </button>
                 <p>Reminders</p>
             </div>
-            <div>
+            <div>  
                 <button mat-icon-button>
                     <mat-icon class="material-icons-outlined">edit</mat-icon>
                 </button>

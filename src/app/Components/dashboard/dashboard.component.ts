@@ -22,5 +22,6 @@ export class DashboardComponent implements OnInit {
     sessionStorage.clear();
     localStorage.clear();
     this.router.navigateByUrl('login');
+
   }
 }

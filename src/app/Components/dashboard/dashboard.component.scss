@@ -11,9 +11,9 @@
   justify-content:center;
     }
     
-input:focus,
-textarea:focus,
-select:focus {
+ input:focus,
+ textarea:focus,
+ select:focus {
     outline: none;
 }
 mat-icon {
@@ -75,6 +75,7 @@ mat-toolbar {
     .profilepic:hover {
         opacity: 70%;
         cursor: pointer;
+
     }
 }
 mat-sidenav-container {
@@ -119,3 +120,17 @@ mat-sidenav-content {
     overflow-x: hidden;
     background-color: white;
 }
+
+
+@media only screen and (max-width:600px){
+    .body{
+        width:250%;
+    }
+    
+    }
+		@media only screen and (max-width:300px){
+			.body{
+					width:300%;
+			}
+			
+			}

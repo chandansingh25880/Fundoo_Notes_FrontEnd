@@ -17,11 +17,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ForgetPasswordComponent } from './Components/forget-password/forget-password.component';
 import { ResetPasswordComponent } from './Components/reset-password/reset-password.component';
 import { DashboardComponent } from './Components/dashboard/dashboard.component';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatDividerModule } from '@angular/material/divider';
-import {MatMenuModule} from '@angular/material/menu';
+// import { MatToolbarModule } from '@angular/material/toolbar';
+// import { MatSidenavModule } from '@angular/material/sidenav';
+// import { MatDividerModule } from '@angular/material/divider';
+// import {MatMenuModule} from '@angular/material/menu';
+import { NotesComponent } from './Components/notes/notes.component';
+import { RemindersComponent } from './Components/reminders/reminders.component';
+import { EditlabelsComponent } from './Components/editlabels/editlabels.component';
+import { ArchiveComponent } from './Components/archive/archive.component';
+import { TrashComponent } from './Components/trash/trash.component';
+import {MaterialModule} from './material/material.module';
+import { CreatenoteComponent } from './Components/createnote/createnote.component';
+import { IconsComponent } from './Components/icons/icons.component';
 
+                                                              
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +38,15 @@ import {MatMenuModule} from '@angular/material/menu';
     LoginComponent,
     ForgetPasswordComponent,
     ResetPasswordComponent,
-    DashboardComponent,     
+    DashboardComponent,
+    NotesComponent,
+    RemindersComponent,
+    EditlabelsComponent,
+    ArchiveComponent,
+    TrashComponent,
+    CreatenoteComponent,
+    IconsComponent,
+     
   ],
   
   imports: [
@@ -46,11 +63,12 @@ import {MatMenuModule} from '@angular/material/menu';
     HttpClientModule,
     BrowserAnimationsModule,
     MatCardModule,
-    MatToolbarModule,
-    MatSidenavModule,
-    MatDividerModule,
-    MatMenuModule
-   
+    // MatToolbarModule,
+    // MatSidenavModule,
+    // MatDividerModule,
+    // MatMenuModule,
+    MaterialModule ,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
