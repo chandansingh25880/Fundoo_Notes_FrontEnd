@@ -29,6 +29,7 @@ export class UserService {
     return this.httpService.postService("/user/login", data, false, httpAuthOptions);    
   }
   
+  
   forgetpassword(data : any){
     console.log("given data is", data);
     return this.httpService.postService("/user/reset", data, false, false);
