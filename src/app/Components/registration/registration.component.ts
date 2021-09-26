@@ -3,7 +3,6 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { UserService } from 'src/app/services/user.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
-
 @Component({
   selector: 'app-registration',
   templateUrl: './registration.component.html',
@@ -50,8 +49,9 @@ export class RegistrationComponent implements OnInit {
         "email":this.registerForm.value.email,
         "password":this.registerForm.value.password,
         "service":this.registerForm.value.service
-      
+
       }
+
       this.user.register(data).subscribe(response =>{
         console.log(response);
         this.snackBar.open("Registered"," ",{ duration: 1000});
@@ -62,9 +62,6 @@ export class RegistrationComponent implements OnInit {
   }
 }
 }
-
-
-
 
 
 

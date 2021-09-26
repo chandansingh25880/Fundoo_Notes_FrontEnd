@@ -42,7 +42,11 @@ const routes: Routes = [
       {
         path:'trash',
         component:TrashComponent
-      }
+      },
+      // {
+      //   path:'createnote',
+      //   component:CreatenoteComponent
+      // }
     ]
   }  
 ];

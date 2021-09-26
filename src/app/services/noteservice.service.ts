@@ -14,7 +14,7 @@ export class NoteserviceService {
   constructor(private http: HttpService) { 
     this.token=localStorage.getItem('Token');
   }
-  url =environment.BaseUrl;
+  url =environment.baseUrl;
 
   createNote(data: any): Observable<any> {
     console.log(data,this.token);
@@ -27,4 +27,16 @@ export class NoteserviceService {
     };
     return this.http.postService('/notes/addNotes',data, true, httpAuthOptions);
   }
+  getAllNotes(): Observable<any> {
+    console.log(this.token);
+    
+    let httpAuthOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json',
+        'Authorization': this.token
+      })
+    };
+    return this.http.getService('/notes/getNotesList', true, httpAuthOptions);
+  }
+
 }

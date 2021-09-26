@@ -1,0 +1,16 @@
+.display-cards{
+    margin: 70px;
+    box-sizing: border-box;
+    max-width: 60vw;
+    display:flex;
+    flex-flow: row wrap;
+    gap:15px;
+}
+.display-cards .mat-card{
+    margin-bottom: 20px;
+}
+
+.mat-card{
+ width: 160px;
+ height: 200px;
+}

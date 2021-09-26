@@ -59,6 +59,8 @@ export class CreatenoteComponent implements OnInit {
     }
      else {
       this.fullEdit = false;
+      console.log("enter valid")
+      
     }
   }
 

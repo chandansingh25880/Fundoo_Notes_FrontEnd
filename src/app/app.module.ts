@@ -29,6 +29,7 @@ import { TrashComponent } from './Components/trash/trash.component';
 import {MaterialModule} from './material/material.module';
 import { CreatenoteComponent } from './Components/createnote/createnote.component';
 import { IconsComponent } from './Components/icons/icons.component';
+import { DisplaynoteComponent } from './Components/displaynote/displaynote.component';
 
                                                               
 @NgModule({
@@ -46,6 +47,7 @@ import { IconsComponent } from './Components/icons/icons.component';
     TrashComponent,
     CreatenoteComponent,
     IconsComponent,
+    DisplaynoteComponent,
      
   ],
   

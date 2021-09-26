@@ -4,11 +4,11 @@
             <button mat-icon-button (click)="toggleSidebar()">
                 <mat-icon>menu</mat-icon>
             </button>
-            <div class="logo">
-                <img src="https://www.gstatic.com/images/branding/product/1x/keep_2020q4_48dp.png" alt="">
-                <div class="fundoo">
-                    <div class="Project" *ngFor="let fontcolor of fontcolors,let i=index">
-                        <h1 class="projectName" [style]=fontcolor>{{fonttexts[i]}}</h1>
+            <div class = "logo">
+                <img src = "https://www.gstatic.com/images/branding/product/1x/keep_2020q4_48dp.png" alt="">
+                <div class = "fundoo">
+                    <div class ="Project" *ngFor="let fontcolor of fontcolors,let i=index">
+                        <h1 class ="projectName" [style] = fontcolor>{{fonttexts[i]}}</h1>
                     </div>
                 </div>
             </div>
@@ -18,17 +18,17 @@
             <button mat-icon-button>
                 <mat-icon>search</mat-icon>
             </button>
-            <input type="text"  placeholder="Search" />
+            <input type = "text"  placeholder = "Search" />
         </div>
-        <div class="refresh" style="display: flex; align-items: center">
+        <div class = "refresh" style = "display: flex; align-items: center">
             <button mat-icon-button>
                 <mat-icon>refresh</mat-icon>
             </button>
             <button mat-icon-button>
-                <mat-icon class="material-icons-outlined">view_agenda</mat-icon>
+                <mat-icon class = "material-icons-outlined">view_agenda</mat-icon>
             </button>
             <button mat-icon-button>
-                <mat-icon class="settings_outline">settings_outline</mat-icon>
+                <mat-icon class = "settings_outline">settings_outline</mat-icon>
             </button>
             <button mat-icon-button style="margin-left: 20px">
                 <mat-icon>apps</mat-icon>
@@ -65,7 +65,7 @@
                 <p>Notes</p>
             </div>
             <div>
-                <button mat-icon-button>
+                <button mat-icon-button >
                     <mat-icon>notifications_none</mat-icon>
                 </button>
                 <p>Reminders</p>

@@ -6,7 +6,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   providedIn: 'root'
 })
 export class HttpService {
-  BaseUrl=environment.BaseUrl;
+  baseUrl = environment.baseUrl;
   token : any;
 
   constructor(private http: HttpClient) { }
@@ -16,6 +16,16 @@ export class HttpService {
       params : id  : id of question or comment to add/post,
       apiendpoint : endpoint i.e 'comments/' , 'answers/', 'editquestions/'
   */
-    return this.http.post(this.BaseUrl+url, payload, tokenRequired && httpOptions);
+    return this.http.post(this.baseUrl+url, payload, tokenRequired && httpOptions);
   }
+
+  getService( url: string = '' , tokenRequired: boolean = false, httpOptions:any=null) {
+    /* handles post operations
+      params : id  : id of question or comment to add/post,
+      apiendpoint : endpoint i.e 'comments/' , 'answers/', 'editquestions/'
+  */
+    return this.http.get(this.baseUrl+url, tokenRequired && httpOptions);
+  }
+
+
 }

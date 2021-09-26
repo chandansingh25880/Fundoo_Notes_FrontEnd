@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -11,7 +12,7 @@ export class DashboardComponent implements OnInit {
   fonttexts = ['F', 'u', 'n', 'd', 'o', 'o','N','o','t','e','s']
   opened =true;
 
-  constructor( private router: Router ) { }
+  constructor( private router: Router,private service:UserService ) { }
 
   ngOnInit(): void {
   }
@@ -19,9 +20,10 @@ export class DashboardComponent implements OnInit {
     this.opened = !this.opened
   }
   logout() {
-    sessionStorage.clear();
+    // sessionStorage.clear();
+    this.service.logout();
     localStorage.clear();
     this.router.navigateByUrl('login');
-
+  
   }
-}
+ }
