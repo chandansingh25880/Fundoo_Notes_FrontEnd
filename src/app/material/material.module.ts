@@ -7,6 +7,8 @@ import {MatMenuModule} from '@angular/material/menu' ;
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { FormsModule } from '@angular/forms';
+import {MatDialogModule} from '@angular/material/dialog';
+
 
 
 
@@ -21,6 +23,7 @@ import { FormsModule } from '@angular/forms';
     MatSnackBarModule,
     MatExpansionModule,
     FormsModule,
+    MatDialogModule,
     
     
   ],
@@ -32,7 +35,8 @@ import { FormsModule } from '@angular/forms';
     MatMenuModule,
     MatSnackBarModule,
     MatExpansionModule,
-    FormsModule
+    FormsModule,
+    MatDialogModule
 
   ]
 })

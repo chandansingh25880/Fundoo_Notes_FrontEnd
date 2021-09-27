@@ -30,6 +30,8 @@ import {MaterialModule} from './material/material.module';
 import { CreatenoteComponent } from './Components/createnote/createnote.component';
 import { IconsComponent } from './Components/icons/icons.component';
 import { DisplaynoteComponent } from './Components/displaynote/displaynote.component';
+import { UpdatenoteComponent} from './Components/updatenote/updatenote.component';
+import {MatDialogModule} from '@angular/material/dialog';
 
                                                               
 @NgModule({
@@ -48,6 +50,8 @@ import { DisplaynoteComponent } from './Components/displaynote/displaynote.compo
     CreatenoteComponent,
     IconsComponent,
     DisplaynoteComponent,
+    UpdatenoteComponent
+    // UpdatenotesComponent,
      
   ],
   
@@ -65,11 +69,9 @@ import { DisplaynoteComponent } from './Components/displaynote/displaynote.compo
     HttpClientModule,
     BrowserAnimationsModule,
     MatCardModule,
-    // MatToolbarModule,
-    // MatSidenavModule,
-    // MatDividerModule,
-    // MatMenuModule,
     MaterialModule ,
+    MatDialogModule
+
     
   ],
   providers: [],

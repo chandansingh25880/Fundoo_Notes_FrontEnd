@@ -51,7 +51,7 @@ export class RegistrationComponent implements OnInit {
         "service":this.registerForm.value.service
 
       }
-
+  
       this.user.register(data).subscribe(response =>{
         console.log(response);
         this.snackBar.open("Registered"," ",{ duration: 1000});

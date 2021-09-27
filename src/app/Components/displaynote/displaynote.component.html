@@ -1,10 +1,13 @@
-<div class="display-cards" fxLayout="row wrap" fxLayoutGap="20px" >
+<div class="display-cards" fxLayout="row wrap" fxLayoutGap="20px"  >
     <mat-card  *ngFor="let note of notesArray" style="background-color:white; border-radius: 10px;">
-        <div > 
+        <div (click)="openDialog(note)"> 
        {{note.title}}
         </div>
-        <div>
+        <!-- <div> -->
        {{note.description}}
+       <div class="icons" style="margin-top: 20%;">
+        <app-icons></app-icons>
+
         </div>
     </mat-card>
     </div>

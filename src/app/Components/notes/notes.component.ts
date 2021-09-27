@@ -20,7 +20,7 @@ export class NotesComponent implements OnInit {
   }
   getAllNotes(): void {
     this.noteservice.getAllNotes().subscribe((response: any) =>{
-      console.log(response);
+      // console.log(response);
       this.noteList=response.data.data;
     }
     )

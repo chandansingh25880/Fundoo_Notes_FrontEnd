@@ -38,5 +38,14 @@ export class NoteserviceService {
     };
     return this.http.getService('/notes/getNotesList', true, httpAuthOptions);
   }
+  updateNoteService(data:any){
+    let httpAuthOptions = {
+      headers:new HttpHeaders({
+        'Content-Type':'application/json',
+        'Authorization': this.token
+      })
+    };
+    return this.http.postService('/notes/updateNotes',data, true, httpAuthOptions);
 
+}
 }

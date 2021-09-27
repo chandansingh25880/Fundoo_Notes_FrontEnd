@@ -27,5 +27,11 @@ export class HttpService {
     return this.http.get(this.baseUrl+url, tokenRequired && httpOptions);
   }
 
+  PutService( url: string= '' , tokenRequired:boolean=false, httpOption:any){
+
+    return this.http.put(url,tokenRequired && httpOption);
+
+  }
+
 
 }
