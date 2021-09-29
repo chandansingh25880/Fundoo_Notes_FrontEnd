@@ -33,7 +33,6 @@
         <mat-icon>more_vert</mat-icon>
     </button>
         <mat-menu #belowMenu = "matMenu" yPosition = "below" class = "delete">    
-            <div class = "deleteButton" mat-stroked-button style = "height: 
-            40px;width:100px;">Delete note</div>
+            <div class = "deleteButton" mat-stroked-button (click) = "deleteNote()">Delete note</div>
         </mat-menu>
     </div>

@@ -18,7 +18,7 @@ export class DisplaynoteComponent implements OnInit {
 
   openDialog(notecard: any): void {
     const dialogRef = this.dialog.open(UpdatenoteComponent, {
-      width:'350px',
+      width:'400px',
      
     data: notecard
     });

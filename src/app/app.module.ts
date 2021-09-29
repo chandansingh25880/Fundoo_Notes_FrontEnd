@@ -17,10 +17,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ForgetPasswordComponent } from './Components/forget-password/forget-password.component';
 import { ResetPasswordComponent } from './Components/reset-password/reset-password.component';
 import { DashboardComponent } from './Components/dashboard/dashboard.component';
-// import { MatToolbarModule } from '@angular/material/toolbar';
-// import { MatSidenavModule } from '@angular/material/sidenav';
-// import { MatDividerModule } from '@angular/material/divider';
-// import {MatMenuModule} from '@angular/material/menu';
 import { NotesComponent } from './Components/notes/notes.component';
 import { RemindersComponent } from './Components/reminders/reminders.component';
 import { EditlabelsComponent } from './Components/editlabels/editlabels.component';
@@ -31,7 +27,8 @@ import { CreatenoteComponent } from './Components/createnote/createnote.componen
 import { IconsComponent } from './Components/icons/icons.component';
 import { DisplaynoteComponent } from './Components/displaynote/displaynote.component';
 import { UpdatenoteComponent} from './Components/updatenote/updatenote.component';
-import {MatDialogModule} from '@angular/material/dialog';
+
+
 
                                                               
 @NgModule({
@@ -50,9 +47,9 @@ import {MatDialogModule} from '@angular/material/dialog';
     CreatenoteComponent,
     IconsComponent,
     DisplaynoteComponent,
-    UpdatenoteComponent
-    // UpdatenotesComponent,
-     
+    UpdatenoteComponent,
+  
+    
   ],
   
   imports: [
@@ -70,10 +67,9 @@ import {MatDialogModule} from '@angular/material/dialog';
     BrowserAnimationsModule,
     MatCardModule,
     MaterialModule ,
-    MatDialogModule
 
-    
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })

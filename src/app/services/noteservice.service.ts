@@ -48,4 +48,13 @@ export class NoteserviceService {
     return this.http.postService('/notes/updateNotes',data, true, httpAuthOptions);
 
 }
+deleteNoteService(data:any){
+  let httpAuthOptions = {
+    headers:new HttpHeaders({
+      'Content-Type':'application/json',
+      'Authorization': this.token
+    })
+  };
+  return this.http.postService('/notes/deleteForeverNotes',data, true, httpAuthOptions);
+}
 }

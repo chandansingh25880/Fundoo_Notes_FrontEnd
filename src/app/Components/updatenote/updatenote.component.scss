@@ -1,5 +1,23 @@
-// .container{
-//     display:flex;
-//     justify-content: center;
-    
-// }
+.title{
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5rem;
+    outline: none;
+}
+.notes-description{
+    width: 100%;
+    border: none;
+    outline: none;
+}
+.close{
+    cursor: pointer;
+    margin-top: 2%;
+}
+.title-top{
+    outline: none;
+    width: 90%;
+    height: 30px;
+    border: none;
+}
